@@ -79,12 +79,12 @@ WSGI_APPLICATION = 'live_chat.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'live_chat',
-        'USER': 'root',
-        'PASSWORD': '',
-        'HOST': 'localhost',
-        'PORT': '3306',
+        "ENGINE": "django.db.backends.postgresql",
+        "NAME": "railway",
+        "USER": "postgres",
+        "PASSWORD": "qoWKaEPegiIsjmZYiUzpVzOQjfosljex",
+        "HOST": "junction.proxy.rlwy.net",
+        "PORT": "25174",
     }
 }
 
