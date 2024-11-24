@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-)#vo+sk6&2$!u75lzo4(ibz&ki_)=n2vx*noyu&#$wmegre0c8
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [".vercel.app", "localhost", "127.0.0.1"]
 
 
 # Application definition
@@ -73,7 +73,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'live_chat.wsgi.application'
+WSGI_APPLICATION = 'live_chat.wsgi.app'
 
 
 # Database
@@ -127,6 +127,7 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 STATIC_ROOT = os.path.join(BASE_DIR, "staticfiles")
+STATICFILES_STORAGE = "whitenoise.storage.CompressedManifeststaticFilesstorage"
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
